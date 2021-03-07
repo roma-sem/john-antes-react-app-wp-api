@@ -1,0 +1,28 @@
+@import '../../../assets/sass/sass-assets.scss';
+
+.InlineListItems {
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	// box-sizing: border-box;
+	// border: 1px solid blue;
+
+	li {
+		position: relative;
+		display: inline-block;
+		margin: 0px 15px 0px 15px;
+		padding: 0px 20px 0px 5px;
+		line-height: 1.5;
+		height: 100%;
+		text-transform: lowercase;
+		// box-sizing: border-box;
+		// border: 1px solid red;
+
+		a {
+			display: block;
+			height: 100%;
+		}
+	}
+}

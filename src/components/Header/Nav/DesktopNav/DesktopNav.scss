@@ -1,0 +1,84 @@
+@import '../../../../assets/sass/sass-assets.scss';
+
+.DesktopNav {
+	position: absolute;
+	left: 40%;
+	top: 0;
+	bottom: 0;
+
+	@include break(sm) {
+		display: none;
+	}
+
+	@include break(xs) {
+		display: none;
+	}
+
+	// display inline:
+	ul {
+		list-style-type: none;
+		overflow: hidden;
+		padding: 0px;
+		margin: 0px;
+		height: 100%;
+		text-align: center;
+		// box-sizing: border-box;
+		// border: 1px solid red;
+
+		li {
+			position: relative;
+			display: inline-block;
+			margin: 0px 15px 0px 15px;
+			padding: 0px 20px 0px 5px;
+			line-height: 4.5;
+			height: 100%;
+			text-transform: lowercase;
+			// box-sizing: border-box;
+			// border: 1px solid blue;
+		}
+	}
+
+	li {
+		// Menu cross over line
+		// &::after {
+		// 	content: ' ';
+		// 	display: block;
+		// 	position: absolute;
+		// 	bottom: 2px;
+		// 	height: 2px;
+		// 	background-color: black;
+		// 	opacity: 1;
+		// 	width: 0%;
+		// 	@include transition;
+		// }
+		//
+		// &:hover::after {
+		// 	width: 100%;
+		// }
+
+		a {
+			display: block;
+			height: 100%;
+
+			&::after {
+				content: ' ';
+				display: block;
+				position: absolute;
+				bottom: 2px;
+				height: 2px;
+				background-color: black;
+				opacity: 1;
+				width: 0%;
+				@include transition;
+			}
+
+			&:hover::after {
+				width: 100%;
+			}
+
+			&.active-desktop-link::after {
+				width: 100% !important;
+			}
+		}
+	}
+}

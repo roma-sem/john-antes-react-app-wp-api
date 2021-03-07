@@ -1,0 +1,24 @@
+@import '../../../assets/sass/sass-assets.scss';
+
+.Logo {
+    position: relative;
+    float: left;
+    width: 175px;
+    height: 60px;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url( '../../../assets/images/logo-JA-2.png' );
+    background-size: 100% auto;
+    @include transition;
+
+    @include break(xs) {
+        // background-image: url( 'images/logo-JA-2-mobile.png' );
+        width: 140px;
+        // top: 0px;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

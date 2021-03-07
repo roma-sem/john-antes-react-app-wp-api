@@ -1,0 +1,70 @@
+@import '../../../assets/sass/sass-assets.scss';
+
+.ThreeColThumbnailContainer {
+    position: relative;
+    overflow: hidden;
+    // border: 1px solid red;
+    // box-sizing: border-box;
+
+    .inner-ThreeColThumbnailContainer {
+        position: relative;
+        margin-left: -10px;
+        margin-right: -10px;
+        overflow: hidden;
+
+        @include break(sm) {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        @include break(xs) {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        // .thumbnail {
+        //     float: left;
+        //     margin-bottom: 20px;
+        //     width: 33.333333%;
+        //     padding-left: 10px;
+        //     padding-right: 10px;
+        //
+        //     @include break(sm) {
+        //         width: 50%;
+        //         padding-left: 20px;
+        //         padding-right: 20px;
+        //     }
+        //
+        //     @include break(xs) {
+        //         width: 100%;
+        //         padding-left: 0px;T
+        //         padding-right: 0px;
+        //     }
+        //
+        //     .inner-container {
+        //         position: relative;
+        //         @include transition;
+        //
+        //         img {
+        //             width: 100%;
+        //             height: auto;
+        //             @include prefix("transform", scale(1) );
+        //             @include transition;
+        //         }
+        //     }
+        //
+        //     &:hover {
+        //         img {
+        //             @include prefix("transform", scale(0.97) );
+        //         }
+        //
+        //         .thumb {
+        //             .arrow {
+        //                 right: 0px;
+        //                 opacity: 1;
+        //             }
+        //         }
+		// 	}
+        // }
+    }
+}

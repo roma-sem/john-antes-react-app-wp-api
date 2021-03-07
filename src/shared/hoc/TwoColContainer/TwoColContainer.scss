@@ -1,0 +1,26 @@
+@import '../../../assets/sass/sass-assets.scss';
+
+.TwoColContainer {
+    position: relative;
+    overflow: hidden;
+    // border: 1px solid black;
+    // box-sizing: border-box;
+
+    .col {
+        width: 50%;
+        position: relative;
+        float: left;
+        min-height: 50px;
+        // background-color: lightpink;
+        // border: 1px solid darkslateblue;
+        box-sizing: border-box;
+    }
+
+    .right-col {
+        float: right;
+    }
+
+    .left-col {
+        float: left;
+    }
+}

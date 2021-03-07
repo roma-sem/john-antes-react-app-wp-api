@@ -1,0 +1,51 @@
+@import '../../assets/sass/sass-assets.scss';
+
+.ViewFrameOverlay {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+
+    .view-frame {
+        position: fixed;
+        background-color: black;
+        z-index: 99999999;
+
+        &.top,
+        &.bottom {
+            height: 10px;
+            width: 100%;
+            left: 0px;
+
+            @include break(xs) {
+                height: 7px;
+            }
+        }
+
+        &.left,
+        &.right {
+            width: 10px;
+            height: 100%;
+            top: 0px;
+
+            @include break(xs) {
+                width: 7px;
+            }
+        }
+
+        &.top {
+            top: 0px;
+        }
+
+        &.bottom {
+            bottom: 0px;
+        }
+
+        &.left {
+            left: 0px;
+        }
+
+        &.right {
+            right: 0px;
+        }
+    }
+}

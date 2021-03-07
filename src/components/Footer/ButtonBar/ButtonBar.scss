@@ -1,0 +1,48 @@
+@import '../../../assets/sass/sass-assets.scss';
+
+.ButtonBar {
+    height: 140px;
+    width: 100%;
+    @include transition;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: block;
+
+    @include break(sm) {
+        height: 125px;
+    }
+
+    @include break(xs) {
+        max-width: 270px;
+        margin: auto;
+        height: 130px;
+    }
+
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: black;
+        @include transition;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 1);
+
+        a {
+            color: white;
+        }
+    }
+
+    h1 {
+        line-height: 3.5;
+
+        @include break(xs) {
+            line-height: 1.5;
+            width: 85%;
+            margin: auto;
+            margin-top: 18px;
+        }
+    }
+}

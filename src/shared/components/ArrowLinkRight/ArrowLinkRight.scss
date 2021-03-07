@@ -1,0 +1,46 @@
+@import '../../../assets/sass/sass-assets.scss';
+
+.ArrowLinkRight {
+    position: relative;
+    height: 22px;
+    font-size: 22px;
+    line-height: 1;
+    padding-right: 70px;
+    float: left;
+
+    @include break(xs) {
+        font-size: 20px;
+    }
+
+    .arrow {
+        display: block;
+        position: absolute;
+        right: 30px;
+        opacity: 1;
+        top: 0;
+        bottom: 0;
+        width: 15px;
+        height: 24px;
+        @include transition;
+        background-image: url('../../../assets/images/arrow_right.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        top: -2px;
+
+        @include break(sm) {
+            // display: none;
+        }
+
+        @include break(xs) {
+            // display: none;
+        }
+
+    }
+
+    &:hover {
+        .arrow {
+            right: 15px;
+        }
+    }
+}

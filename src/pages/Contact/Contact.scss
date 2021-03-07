@@ -1,0 +1,72 @@
+@import '../../assets/sass/sass-assets.scss';
+
+.Contact {
+    form {
+        color: black;
+        width: 100%;
+        max-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        @include break(xs) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        input,
+        textarea {
+            letter-spacing: 1px;
+            width: 100%;
+            border: 0px;
+            border-bottom: 1px solid black;
+            background-color: rgba(0, 0, 0, 0);
+            -webkit-appearance: none;
+            border-radius: 0px;
+            outline: none;
+            margin-bottom: 20px;
+            @include transition;
+
+            &:focus {
+    			border-bottom: 1px solid black;
+    		}
+
+            &:placeholder-shown {
+                border-bottom: 1px solid black;
+            }
+
+            &::-webkit-input-placeholder,
+            &::-moz-placeholder,
+            &:-ms-input-placeholder,
+            &:-moz-placeholder {
+      		  color: #a1a1a1;
+              border-bottom: 1px solid lightgrey;
+    		}
+        }
+
+        textarea {
+            height: 100px;
+            min-height: 100px;
+            max-height: 250px;
+        }
+
+        input[type='submit'] {
+            text-align: left;
+            width: 70px;
+            border: 0px;
+            display: block;
+            padding-right: 30px;
+            padding-left: 0px;
+            background-image: url('../../assets/images/arrow_right.svg');
+            background-repeat: no-repeat;
+            background-position: center right;
+            @include transition;
+            font-size: 16px;
+            user-select: none;
+            cursor: pointer;
+
+            &:hover {
+                width: 80px;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import '../../../../assets/sass/sass-assets.scss';
+
+.MobileNav {
+    position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5000000;
+	background-image: url('../../../../assets/images/topo.jpg');
+	@include transition;
+	// opacity: 0;
+	opacity: 1;
+
+	&.active {
+		opacity: 1;
+	}
+
+    .Logo {
+        @include break(xs) {
+            top: 30px !important;
+            left: 25px;
+        }
+    }
+
+	ul {
+		list-style-type: none;
+		overflow: hidden;
+		padding: 0px;
+		margin: 0px;
+		text-align: center;
+		position: absolute;
+	    top: 45%;
+		left: 0;
+		right: 0;
+	    @include prefix( transform, translateY(-50%) );
+
+		li {
+			margin-bottom: 15px;
+			text-transform: lowercase;
+			font-size: 35px;
+			letter-spacing: 2px;
+			@include fontFam( 'FuturaStd-Light' );
+			font-weight: 100 !important;
+		}
+	}
+
+    .active-mob-nav-link {
+        display: inline-block;
+
+        &::after {
+            content: '';
+            display: block;
+            border-bottom: 1px solid black;
+        }
+    }
+}

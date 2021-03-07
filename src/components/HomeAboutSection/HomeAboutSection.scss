@@ -1,0 +1,47 @@
+@import '../../assets/sass/sass-assets.scss';
+
+.HomeAboutSection {
+    .TwoColContainer {
+        .left-col {
+            padding-right: 90px;
+            padding-top: 10px;
+
+            @include break(sm) {
+                width: 100%;
+                padding-right: 0px;
+                padding-top: 10px;
+                margin: auto;
+                float: none;
+            }
+
+            @include break(xs) {
+                width: 100%;
+                padding-right: 0px;
+                padding-top: 10px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .right-col {
+            @include break(sm) {
+                width: 100%;
+                margin-top: 50px;
+            }
+
+            @include break(xs) {
+                width: 100%;
+                margin-top: 50px;
+            }
+
+            p {
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../../../assets/sass/sass-assets.scss';
+
+.FooterLogo {
+    position: relative;
+    height: 175px;
+    width: 175px;
+    margin: auto;
+    float: none;
+    left: inherit;
+
+    @include break(xs) {
+        height: 70px;
+        width: 70px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

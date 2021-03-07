@@ -1,0 +1,147 @@
+@import './assets/sass/sass-assets.scss';
+
+// Import fonts (from local folder):
+@include fontFace( 'FuturaStd-Book', 'FuturaStd-Book' );
+@include fontFace( 'FuturaStd-Light', 'FuturaStd-Light' );
+@include fontFace( 'GarmentDistrict-Regular', 'GarmentDistrict-Regular' );
+
+/*
+@include fontFam( 'FuturaStd-Book' );
+@include fontFam( 'FuturaStd-Light' );
+@include fontFam( 'GarmentDistrict-Regular' );
+*/
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    @include fontFam( 'FuturaStd-Book' );
+}
+
+body {
+    background-image: url('./assets/images/topo.jpg');
+    color: black !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include fontFam( 'FuturaStd-Book' );
+}
+
+p, li, a, div {
+    @include fontFam( 'FuturaStd-Book' );
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 2;
+    letter-spacing: 1px;
+
+    @include break(xs) {
+        font-size: 14px;
+    }
+}
+
+.container {
+    max-width: 1260px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    // border: 1px solid blue;
+    // box-sizing: border-box;
+
+    @include break(xs) {
+        max-width: 270px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    &.header-container {
+        @include break(sm) {
+            max-width: inherit;
+        };
+
+        @include break(xs) {
+            max-width: inherit;
+        };
+    }
+
+    &.all-content-wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        @include break(sm) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include break(xs) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
+
+.inner-container {
+    // border: 1px solid green;
+    // box-sizing: border-box;
+}
+
+a {
+   text-decoration: none !important;
+   @include transition;
+
+   &:link,
+   &:visited,
+   &:hover,
+   &:active {
+	   text-decoration: none;
+   }
+
+   &:active {
+       color: black;
+   }
+
+   &:link {
+	   color: black;
+   }
+
+   &:hover {
+	   color: black;
+   }
+
+   &:visited {
+	   color: black;
+   }
+
+   &.block-link {
+	   display: block;
+	   height: 100%;
+   }
+}
+
+// Remove button styling:
+button {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}

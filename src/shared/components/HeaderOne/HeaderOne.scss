@@ -1,0 +1,16 @@
+@import '../../../assets/sass/sass-assets.scss';
+
+.HeaderOne {
+    @include fontFam( 'FuturaStd-Light' );
+    font-size: 40px;
+    margin: 0px;
+    line-height: 1.4;
+
+    @include break(sm) {
+        font-size: 35px;
+    }
+
+    @include break(xs) {
+        font-size: 28px;
+    }
+}

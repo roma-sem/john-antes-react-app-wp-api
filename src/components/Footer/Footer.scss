@@ -1,0 +1,25 @@
+@import '../../assets/sass/sass-assets.scss';
+
+footer {
+    position: relative;
+    padding: 150px 0px 50px 0px;
+    margin: auto;
+
+    // &.contact {
+    //     @include break(xs) {
+    //         padding: 0px 0px 0px 0px;
+    //     }
+    // }
+
+    @include break(xs) {
+        padding: 100px 0px 0px 0px;
+    }
+
+    .HeaderOne {
+        text-align: center;
+    }
+
+    .HorizontalLineDivider {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../assets/sass/sass-assets.scss';
+
+.SingleWork {
+    .project-description {
+        width: 65%;
+        margin-top: 30px;
+        margin-bottom: 80px;
+
+        @include break(sm) {
+            width: 70%;
+        }
+
+        @include break(xs) {
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 60px;
+        }
+
+        // CATEGORIES LIST:
+        // ul {
+        //     padding: 0px;
+        //     margin-top: 35px;
+        //     list-style-type: none;
+        //
+        //     @include break(xs) {
+        //         margin-top: 20px;
+        //     }
+        //
+        //     li {
+        //         display: inline-block;
+        //         color: grey;
+        //
+        //         &:last-child {
+        //             span {
+        //                 display: none;
+        //             }
+        //         }
+        //
+        //         span {
+        //             position: relative;
+        //             bottom: 2px;
+        //             width: 6px;
+        //             height: 6px;
+        //             display: inline-block;
+        //             background-color: grey;
+        //             margin-left: 8px;
+        //             margin-right: 8px;
+        //             @include prefix( transform, rotate(45deg) );
+        //         }
+        //     }
+        // }
+    }
+
+    .image-container {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

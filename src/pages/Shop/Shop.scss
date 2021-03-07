@@ -1,0 +1,13 @@
+@import '../../assets/sass/sass-assets.scss';
+
+.Shop {
+    section {
+        margin-top: 30px;
+        position: relative;
+        overflow: hidden;
+
+        @include break(xs) {
+            margin-top: 20px;
+        }
+    }
+}
